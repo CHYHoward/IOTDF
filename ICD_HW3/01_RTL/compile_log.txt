@@ -1,0 +1,126 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Wed Apr 17 15:41:36 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../00_TESTBED/tb_syn.v'
+Parsing design file './IOTDF.v'
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module tb
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _6166_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2022.06/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 17 15:41 2024
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'IOTDF_F2.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+-----------------------------------------------------
+
+Start to Send IOT Data & Compare ...
+
+
+P00:  ** Correct!! ** , iot_out=00000000000000000000000000001229
+P01:  ** Correct!! ** , iot_out=41a5b3be805b7776a3bc91537672737e
+P02:  ** Correct!! ** , iot_out=4e912e3a6c5e5d5b86976a707d727d8f
+P03:  ** Correct!! ** , iot_out=3cb3ad524373723058a6cbad594e3938
+P04:  ** Correct!! ** , iot_out=49cfdda29aa03c203660b6c57a59405e
+P05:  ** Correct!! ** , iot_out=3066505a466cb4b7934a5d5364708166
+P06:  ** Correct!! ** , iot_out=25473273b6856e9562809377cbbf96d3
+P07:  ** Correct!! ** , iot_out=035593628d58364977ab62519796797d
+P08:  ** Correct!! ** , iot_out=3078697f96748f92c7b59b908194bba8
+P09:  ** Correct!! ** , iot_out=00000000000000050c45909897544857
+P10:  ** Correct!! ** , iot_out=41bfd0b1bf9f5c757b5b685c5542565f
+P11:  ** Correct!! ** , iot_out=126698442a5fa5a95770a252748b65a6
+P12:  ** Correct!! ** , iot_out=3ab6e5e5e1902420351e21598c859c98
+P13:  ** Correct!! ** , iot_out=367986bfae8047639f7180d6cc92b7c0
+P14:  ** Correct!! ** , iot_out=4ec4cfb15a76c5be7f5772854f1f2226
+P15:  ** Correct!! ** , iot_out=2183bca9bdc37d4b705c7d7c7a9386ad
+P16:  ** Correct!! ** , iot_out=044d976d96b68796944159794e485381
+P17:  ** Correct!! ** , iot_out=196fbfcfc58d88b296704b2551864589
+P18:  ** Correct!! ** , iot_out=193037637f9080a286856ab0a6383b56
+P19:  ** Correct!! ** , iot_out=278fc2a190745b614e4155bfc0772818
+P20:  ** Correct!! ** , iot_out=043a928a7abacbc3812b154784635378
+P21:  ** Correct!! ** , iot_out=083b5c2919296773435ba995829f7f72
+P22:  ** Correct!! ** , iot_out=135daa917cc3cfd7eda266b49585c1dc
+P23:  ** Correct!! ** , iot_out=3f997a584746684b3d80a1909a445a84
+P24:  ** Correct!! ** , iot_out=45c2ab7476341c528240509490555092
+P25:  ** Correct!! ** , iot_out=32644135496e55afe1cb9a6169a0717d
+P26:  ** Correct!! ** , iot_out=1b6480757c7ec8ae9baca7ad9bbaa281
+P27:  ** Correct!! ** , iot_out=1656724c68a38f7e9fb581557f55263a
+P28:  ** Correct!! ** , iot_out=032d5466c4e7c5726d707d9082a3a0c0
+P29:  ** Correct!! ** , iot_out=4590749374554f64ad95a6b1c3834a75
+P30:  ** Correct!! ** , iot_out=1471aa6c85c6c289afb986806961b675
+P31:  ** Correct!! ** , iot_out=4fd7b74d4f8b83848970b2d3c1887b73
+P32:  ** Correct!! ** , iot_out=0a468f7b606448518eaf71664c58aba5
+P33:  ** Correct!! ** , iot_out=00000000000000000000000000000000
+P34:  ** Correct!! ** , iot_out=1e5f97d3b3444d8a93baccc2e3f5d472
+P35:  ** Correct!! ** , iot_out=3f97613e5b689298ad8b7e4b468a7365
+P36:  ** Correct!! ** , iot_out=49893c324e6d5b94bcbf7536597e4f49
+P37:  ** Correct!! ** , iot_out=1d535b81c8966280a2aa3d5abb7a66ae
+P38:  ** Correct!! ** , iot_out=49c3c69d746493c269456c70855e879c
+P39:  ** Correct!! ** , iot_out=0950a7bbe4c48c8570b6cbb184a2aeb6
+P40:  ** Correct!! ** , iot_out=030e4b8143337caeb0bbe1ebcdc8e8dd
+P41:  ** Correct!! ** , iot_out=000000001a375f925d6c7995a7a4d18e
+P42:  ** Correct!! ** , iot_out=4ac6e0ad5c6d2e3d8fa48a75a99b8561
+P43:  ** Correct!! ** , iot_out=2f694f442b408b7063855c8278386e98
+P44:  ** Correct!! ** , iot_out=04377e998a6bc3d4a76f66c2a5816e81
+P45:  ** Correct!! ** , iot_out=46812c4b7b566896bf95697b3969b390
+P46:  ** Correct!! ** , iot_out=44b0c5dfe4b14c415a60cbf0dfb36b4b
+P47:  ** Correct!! ** , iot_out=00000233a1dfcba4938dc9d1b09f96c5
+P48:  ** Correct!! ** , iot_out=257a794b514c7a5a66593b3c6484797f
+P49:  ** Correct!! ** , iot_out=0526527c8b5c65626b76355fc6ba9c72
+P50:  ** Correct!! ** , iot_out=1f5ea2e4ce823662c2b09653486e6a7b
+P51:  ** Correct!! ** , iot_out=3b81516fd6ae3161d6be60214ecbd9c2
+P52:  ** Correct!! ** , iot_out=2a604e76d2f3e7ccb3bad6914c82a7a9
+P53:  ** Correct!! ** , iot_out=2884a697a390646ca195746a7184896e
+P54:  ** Correct!! ** , iot_out=42a6a18e9ac59b8eb3b37993d9ce8452
+P55:  ** Correct!! ** , iot_out=000000000000000000000355cd9a5758
+P56:  ** Correct!! ** , iot_out=1575cd954a708a4a899883a17973b6b0
+P57:  ** Correct!! ** , iot_out=0b527d2c336173c89f4e535b6932356d
+P58:  ** Correct!! ** , iot_out=03335b3b656443553d2f577964c1cc85
+P59:  ** Correct!! ** , iot_out=17697e689a495fd09f79a361454d97ad
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+Total cost time:   10980.00 ns
+-------------------------PASS------------------------
+
+$finish called from file "../00_TESTBED/tb_syn.v", line 233.
+$finish at simulation time              1098000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10980000 ps
+CPU Time:      0.640 seconds;       Data structure size:   0.0Mb
+Wed Apr 17 15:41:43 2024
+CPU time: .523 seconds to compile + .564 seconds to elab + .439 seconds to link + .680 seconds in simulation

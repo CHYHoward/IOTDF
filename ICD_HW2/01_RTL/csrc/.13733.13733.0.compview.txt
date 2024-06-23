@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1718422679.297594116, "rt":1.06, "ut":0.13, "st":0.08}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1718422675.676930132}
+{"VCS_COMP_START_TIME": 1718422675.676930132}
+{"VCS_COMP_END_TIME": 1718422681.063425129}
+{"VCS_USER_OPTIONS": "-f rtl_01.f -full64 -R +v2k -debug_access+all +define+p2+F2"}
+{"vcs1": {"peak_mem": 313400}}

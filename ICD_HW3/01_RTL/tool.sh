@@ -1,0 +1,1 @@
+source ~/.cshrc_icd

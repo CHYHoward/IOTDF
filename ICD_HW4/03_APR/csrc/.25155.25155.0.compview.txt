@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1714840371.238072566, "rt":0.11, "ut":0.06, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1714840370.263645373}
+{"VCS_COMP_START_TIME": 1714840370.263645373}
+{"VCS_COMP_END_TIME": 1714840371.465520997}
+{"VCS_USER_OPTIONS": "-f apr_03.f -full64 -R +neg_tchk +maxdelays -debug_access+all +v2k +define +p1 +F1 +APR"}

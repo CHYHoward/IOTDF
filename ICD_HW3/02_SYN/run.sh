@@ -1,0 +1,1 @@
+vcs -f syn_02.f -full64 -R +neg_tchk -debug_access+all +v2k +define+p1+F1+SYN

@@ -1,0 +1,81 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Tue Apr 23 16:12:31 2024
+Host:		cad33 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (4cores*16cpus*Intel(R) Xeon(R) CPU E5620 @ 2.40GHz 12288KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (201 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set init_io_file 03_APR/layout/IOTDF.globals
+<CMD> init_design
+**ERROR: **ERROR: (IMPIMEX-3):	There is no verilog netlist found in init_verilog. The variable is either not specified or specified incorrectly. Check the location of Verilog file in the global file.
+
+<CMD> set init_verilog 01_RTL/IOTDF.v
+<CMD> set init_io_file 03_APR/layout/IOTDF.globals
+<CMD> init_design
+No LEF file provided, but timing lib is provided.
+Use timer mode.
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=2.09min, fe_real=14.10min, fe_mem=506.1M) ***
+#% Begin Load netlist data ... (date=04/23 16:26:37, mem=466.3M)
+*** Begin netlist parsing (mem=506.1M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text [ for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text 0 for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text : for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text 15 for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text ] for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text ; for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text always for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text @ for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text ) for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text begin for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text state_nxt for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text = for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text S_IDLE for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text ; for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 51 near the text case for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 51 near the text state for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 51 near the text ) for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 52 near the text S_IDLE for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 52 near the text : for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 52 near the text begin for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-209) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**FATAL ERROR: [/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/vl/vlVerilogMTLex.l:1038:vlVerilogMT_yyerror]: Too many errors in verilog file 01_RTL/IOTDF.v ... aborting
+Exiting due to previous fatal error.

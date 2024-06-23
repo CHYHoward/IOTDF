@@ -1,0 +1,61 @@
+Loading db file '/home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/typical.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Apr 22 21:30:28 2024
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/typical.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+IOTDF                  tsmc13_wl10       slow
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 766.0061 uW   (85%)
+  Net Switching Power  = 135.8863 uW   (15%)
+                         ---------
+Total Dynamic Power    = 901.8924 uW  (100%)
+
+Cell Leakage Power     =   9.7438 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.6515            0.0000            0.0000            0.6515  (  71.46%)  i
+register       1.2550e-02        3.5712e-02        1.4344e+06        4.9696e-02  (   5.45%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1020            0.1002        8.3094e+06            0.2105  (  23.09%)
+--------------------------------------------------------------------------------------------------
+Total              0.7660 mW         0.1359 mW     9.7438e+06 pW         0.9116 mW

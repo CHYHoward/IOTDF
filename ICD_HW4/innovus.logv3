@@ -1,0 +1,16 @@
+[04/23 16:31:00      0s] 
+[04/23 16:31:00      0s] Cadence Innovus(TM) Implementation System.
+[04/23 16:31:00      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/23 16:31:00      0s] 
+[04/23 16:31:00      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[04/23 16:31:00      0s] Options:	
+[04/23 16:31:00      0s] Date:		Tue Apr 23 16:31:00 2024
+[04/23 16:31:00      0s] Host:		cad33 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (4cores*16cpus*Intel(R) Xeon(R) CPU E5620 @ 2.40GHz 12288KB)
+[04/23 16:31:00      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[04/23 16:31:00      0s] 
+[04/23 16:31:00      0s] License:
+[04/23 16:31:00      0s] 		Initialization status was 'ERROR (LMC-01902): License call failed. The license server search path is defined as <none>. Can't find license file.
+
+Run 'lic_error LMC-01902' for more information.' (-902)
+[04/23 16:31:00      0s] 		Fail to find any innovus license...
+[04/23 16:31:00      0s] 		Check your Innovus license status.

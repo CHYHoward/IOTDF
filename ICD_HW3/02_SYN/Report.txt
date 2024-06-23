@@ -1,0 +1,199 @@
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Error: Could not read the following target libraries:
+your_library.db 
+ (UIO-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+  Allocating blocks in 'DW02_mult_A_width3_B_width8'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+  Allocating blocks in 'DW01_absval_width3'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+  Allocating blocks in 'DW01_absval_width8'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+  Allocating blocks in 'DW02_mult_A_width4_B_width8'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'IOTDF' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : IOTDF
+Version: U-2022.12
+Date   : Wed Apr 17 15:56:45 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: gtech
+Wire Load Model Mode: top
+
+  Startpoint: o_busy_reg (rising edge-triggered flip-flop)
+  Endpoint: busy (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  o_busy_reg/clocked_on (**SEQGEN**)       0.00       0.00 r
+  o_busy_reg/Q (**SEQGEN**)                0.00       0.00 r
+  busy (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+ 
+****************************************
+Report : area
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Apr 22 20:51:44 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    typical (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/typical.db)
+
+Number of ports:                         1534
+Number of nets:                          3552
+Number of cells:                         1903
+Number of combinational cells:           1549
+Number of sequential cells:               264
+Number of macros/black boxes:               0
+Number of buf/inv:                        209
+Number of references:                      91
+
+Combinational area:              25932.877732
+Buf/Inv area:                      899.621986
+Noncombinational area:            7015.354242
+Macro/Black Box area:                0.000000
+Net Interconnect area:          204401.042755
+
+Total cell area:                 32948.231974
+Total area:                     237349.274729
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : IOTDF
+Version: U-2022.12
+Date   : Mon Apr 22 20:53:22 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: whole_data_reg[126]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_data_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IOTDF              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  whole_data_reg[126]/CK (DFFQX2)          0.00       1.00 r
+  whole_data_reg[126]/Q (DFFQX2)           0.58       1.58 r
+  U436/Y (INVX1)                           0.13       1.72 f
+  U438/Y (NAND2X2)                         0.10       1.82 r
+  U453/Y (NAND2X1)                         0.15       1.97 f
+  U451/Y (CLKINVX1)                        0.11       2.08 r
+  U456/Y (NAND2X1)                         0.08       2.15 f
+  U449/Y (NAND2X1)                         0.24       2.39 r
+  U442/Y (CLKINVX1)                        0.18       2.57 f
+  U425/Y (NAND2X1)                         0.16       2.73 r
+  U441/Y (NAND2X2)                         0.09       2.81 f
+  U448/Y (CLKINVX1)                        0.12       2.94 r
+  U458/Y (NAND2X1)                         0.09       3.02 f
+  U459/Y (NAND2X1)                         0.31       3.33 r
+  U481/Y (XOR3X4)                          0.27       3.60 r
+  U454/Y (XNOR2X1)                         0.16       3.76 r
+  U1236/Y (XOR3X2)                         0.26       4.02 r
+  U447/Y (XOR3X2)                          0.26       4.28 r
+  U484/Y (XNOR2X1)                         0.29       4.57 r
+  U509/Y (XOR3X1)                          0.37       4.94 r
+  U1237/Y (XOR3X2)                         0.28       5.22 f
+  U443/Y (XOR2X4)                          0.10       5.31 r
+  U625/Y (CLKINVX1)                        0.20       5.51 f
+  U1238/Y (XOR3X2)                         0.23       5.74 r
+  U1239/Y (XOR3X2)                         0.25       5.99 f
+  U446/Y (XOR2X4)                          0.10       6.09 r
+  U627/Y (CLKINVX1)                        0.20       6.28 f
+  U1240/Y (XOR3X2)                         0.23       6.51 r
+  U1241/Y (XOR3X2)                         0.25       6.76 f
+  U445/Y (XOR2X4)                          0.10       6.86 r
+  U626/Y (CLKINVX1)                        0.20       7.06 f
+  U1242/Y (XOR3X2)                         0.23       7.29 r
+  U1243/Y (XOR3X2)                         0.25       7.54 f
+  U444/Y (XOR2X4)                          0.10       7.63 r
+  U624/Y (CLKINVX1)                        0.24       7.87 f
+  U418/Y (XOR3X2)                          0.23       8.10 r
+  U440/Y (XOR2X2)                          0.14       8.24 f
+  U460/Y (CLKINVX1)                        0.14       8.39 r
+  U470/Y (NAND2X1)                         0.09       8.47 f
+  U471/Y (NAND2X1)                         0.24       8.72 r
+  U467/Y (XNOR3X1)                         0.33       9.05 r
+  U1244/Y (XOR3X2)                         0.27       9.32 f
+  U480/Y (XOR2X4)                          0.10       9.42 r
+  U482/Y (CLKINVX1)                        0.19       9.61 f
+  U465/Y (XOR2X1)                          0.26       9.86 r
+  U468/Y (CLKINVX1)                        0.23      10.10 f
+  U477/Y (NAND2X1)                         0.16      10.26 r
+  U478/Y (NAND2X1)                         0.12      10.38 f
+  U475/Y (XOR2X1)                          0.15      10.53 f
+  U780/Y (AO22X1)                          0.28      10.81 f
+  o_data_reg[2]/D (DFFQXL)                 0.00      10.81 f
+  data arrival time                                  10.81
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.00      11.00
+  clock uncertainty                       -0.10      10.90
+  o_data_reg[2]/CK (DFFQXL)                0.00      10.90 r
+  library setup time                      -0.09      10.81
+  data required time                                 10.81
+  -----------------------------------------------------------
+  data required time                                 10.81
+  data arrival time                                 -10.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+

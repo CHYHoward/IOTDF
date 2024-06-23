@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : IOTDF
+Version: U-2022.12
+Date   : Sat Jun 15 22:19:31 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: input_data_reg[34]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: output_data_reg[39]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IOTDF              tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  input_data_reg[34]/CK (DFFHQX8)                         0.00       1.00 r
+  input_data_reg[34]/Q (DFFHQX8)                          0.27       1.27 f
+  U1004/Y (CLKXOR2X1)                                     0.26       1.53 f
+  add_1_root_add_0_root_add_140_2/B[2] (IOTDF_DW01_add_20)
+                                                          0.00       1.53 f
+  add_1_root_add_0_root_add_140_2/U1_2/CO (ADDFHX1)       0.25       1.79 f
+  add_1_root_add_0_root_add_140_2/U1_3/CO (ADDFX1)        0.22       2.01 f
+  add_1_root_add_0_root_add_140_2/U1_4/CO (ADDFHX2)       0.16       2.17 f
+  add_1_root_add_0_root_add_140_2/U1_5/CO (ADDFHX2)       0.15       2.31 f
+  add_1_root_add_0_root_add_140_2/U1_6/CO (ADDFHX2)       0.14       2.46 f
+  add_1_root_add_0_root_add_140_2/U1_7/CO (ADDFHX1)       0.19       2.65 f
+  add_1_root_add_0_root_add_140_2/U1_8/CO (ADDFHX2)       0.18       2.83 f
+  add_1_root_add_0_root_add_140_2/U2/Y (CLKAND2X3)        0.14       2.96 f
+  add_1_root_add_0_root_add_140_2/U8/Y (XOR2X1)           0.17       3.13 r
+  add_1_root_add_0_root_add_140_2/SUM[10] (IOTDF_DW01_add_20)
+                                                          0.00       3.13 r
+  add_0_root_add_0_root_add_140_2/B[10] (IOTDF_DW01_add_19)
+                                                          0.00       3.13 r
+  add_0_root_add_0_root_add_140_2/U1/Y (BUFX6)            0.10       3.23 r
+  add_0_root_add_0_root_add_140_2/U1_10/CO (ADDFHX2)      0.18       3.41 r
+  add_0_root_add_0_root_add_140_2/U1_11/Y (XOR3X4)        0.17       3.58 r
+  add_0_root_add_0_root_add_140_2/SUM[11] (IOTDF_DW01_add_19)
+                                                          0.00       3.58 r
+  add_141_round/A[8] (IOTDF_DW01_inc_11_DW01_inc_12)      0.00       3.58 r
+  add_141_round/U2/Y (XOR2X4)                             0.10       3.68 f
+  add_141_round/SUM[8] (IOTDF_DW01_inc_11_DW01_inc_12)
+                                                          0.00       3.68 f
+  U1138/Y (AO22X4)                                        0.13       3.81 f
+  output_data_reg[39]/D (DFFQX1)                          0.00       3.81 f
+  data arrival time                                                  3.81
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             1.00       4.00
+  clock uncertainty                                      -0.10       3.90
+  output_data_reg[39]/CK (DFFQX1)                         0.00       3.90 r
+  library setup time                                     -0.09       3.81
+  data required time                                                 3.81
+  --------------------------------------------------------------------------
+  data required time                                                 3.81
+  data arrival time                                                 -3.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+

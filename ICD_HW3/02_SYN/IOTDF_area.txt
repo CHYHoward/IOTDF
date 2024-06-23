@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : IOTDF
+Version: U-2022.12
+Date   : Tue Apr 23 15:19:38 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    typical (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/typical.db)
+
+Number of ports:                         1534
+Number of nets:                          3550
+Number of cells:                         1900
+Number of combinational cells:           1546
+Number of sequential cells:               264
+Number of macros/black boxes:               0
+Number of buf/inv:                        208
+Number of references:                      93
+
+Combinational area:              25915.903732
+Buf/Inv area:                      897.924586
+Noncombinational area:            7034.025648
+Macro/Black Box area:                0.000000
+Net Interconnect area:          204261.042053
+
+Total cell area:                 32949.929380
+Total area:                     237210.971433
+1

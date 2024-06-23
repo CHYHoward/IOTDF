@@ -1,0 +1,90 @@
+[04/23 16:32:01      0s] 
+[04/23 16:32:01      0s] Cadence Innovus(TM) Implementation System.
+[04/23 16:32:01      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/23 16:32:01      0s] 
+[04/23 16:32:01      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[04/23 16:32:01      0s] Options:	
+[04/23 16:32:01      0s] Date:		Tue Apr 23 16:32:01 2024
+[04/23 16:32:01      0s] Host:		cad33 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (4cores*16cpus*Intel(R) Xeon(R) CPU E5620 @ 2.40GHz 12288KB)
+[04/23 16:32:01      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[04/23 16:32:01      0s] 
+[04/23 16:32:01      0s] License:
+[04/23 16:32:01      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[04/23 16:32:01      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/23 16:32:18     15s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[04/23 16:32:18     15s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[04/23 16:32:18     15s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[04/23 16:32:18     15s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[04/23 16:32:18     15s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[04/23 16:32:18     15s] @(#)CDS: CPE v17.11-s095
+[04/23 16:32:18     15s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[04/23 16:32:18     15s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[04/23 16:32:18     15s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[04/23 16:32:18     15s] @(#)CDS: RCDB 11.10
+[04/23 16:32:18     15s] --- Running on cad33 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (4cores*16cpus*Intel(R) Xeon(R) CPU E5620 @ 2.40GHz 12288KB) ---
+[04/23 16:32:18     15s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_17515_cad33_b10163_YDTSok.
+
+[04/23 16:32:18     15s] Change the soft stacksize limit to 0.2%RAM (201 mbytes). Set global soft_stack_size_limit to change the value.
+[04/23 16:32:19     15s] 
+[04/23 16:32:19     15s] **INFO:  MMMC transition support version v31-84 
+[04/23 16:32:19     15s] 
+[04/23 16:32:19     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/23 16:32:19     15s] <CMD> suppressMessage ENCEXT-2799
+[04/23 16:32:20     16s] <CMD> getDrawView
+[04/23 16:32:20     16s] <CMD> loadWorkspace -name Physical
+[04/23 16:32:20     16s] <CMD> win
+[04/23 16:33:29     22s] <CMD> set init_verilog 01_RTL/IOTDF.v
+[04/23 16:33:29     22s] <CMD> set init_io_file 03_APR/layout/IOTDF.globals
+[04/23 16:33:29     22s] <CMD> init_design
+[04/23 16:33:29     22s] No LEF file provided, but timing lib is provided.
+[04/23 16:33:29     22s] Use timer mode.
+[04/23 16:33:29     22s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.37min, fe_real=1.47min, fe_mem=509.6M) ***
+[04/23 16:33:29     22s] #% Begin Load netlist data ... (date=04/23 16:33:29, mem=467.5M)
+[04/23 16:33:29     22s] *** Begin netlist parsing (mem=509.6M) ***
+[04/23 16:33:29     22s] Created 0 new cells from 0 timing libraries.
+[04/23 16:33:29     22s] Reading netlist ...
+[04/23 16:33:29     22s] Backslashed names will retain backslash and a trailing blank character.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text [ for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text 0 for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text : for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text 15 for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text ] for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 39 near the text ; for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text always for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text @ for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text ) for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 49 near the text begin for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text state_nxt for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text = for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text S_IDLE for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 50 near the text ; for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 51 near the text case for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 51 near the text state for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 51 near the text ) for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 52 near the text S_IDLE for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 52 near the text : for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **ERROR: (IMPVL-209):	In Verilog file '01_RTL/IOTDF.v', check line 52 near the text begin for the issue: 'syntax error'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+[04/23 16:33:29     22s] **WARN: (EMS-27):	Message (IMPVL-209) has exceeded the current message display limit of 20.
+[04/23 16:33:29     22s] To increase the message display limit, refer to the product command reference manual.
+[04/23 16:33:29     22s] **FATAL ERROR: [/icd/cm_t1nb_001/INNOVUS171/Rel/17.11/main/lnx86_64_opt/17.11-s080_1/fe/src/vl/vlVerilogMTLex.l:1038:vlVerilogMT_yyerror]: Too many errors in verilog file 01_RTL/IOTDF.v ... aborting
+[04/23 16:33:29     22s] Exiting due to previous fatal error.

@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: U-2022.12
+Date   : Tue Apr 23 15:19:38 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: whole_data_reg[126]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o_data_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IOTDF              tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  whole_data_reg[126]/CK (DFFQX2)          0.00       1.00 r
+  whole_data_reg[126]/Q (DFFQX2)           0.60       1.60 r
+  U415/Y (INVX3)                           0.07       1.67 f
+  U437/Y (NAND2X2)                         0.09       1.76 r
+  U450/Y (NAND2X1)                         0.15       1.91 f
+  U448/Y (CLKINVX1)                        0.11       2.02 r
+  U455/Y (NAND2X1)                         0.08       2.09 f
+  U446/Y (NAND2X1)                         0.24       2.33 r
+  U439/Y (CLKINVX1)                        0.18       2.51 f
+  U424/Y (NAND2X1)                         0.16       2.67 r
+  U422/Y (NAND2X2)                         0.09       2.75 f
+  U445/Y (CLKINVX1)                        0.12       2.87 r
+  U457/Y (NAND2X1)                         0.09       2.96 f
+  U458/Y (NAND2X1)                         0.28       3.24 r
+  U435/Y (XOR3X2)                          0.31       3.55 r
+  U453/Y (XNOR2X1)                         0.18       3.73 r
+  U1233/Y (XOR3X2)                         0.26       3.99 r
+  U444/Y (XOR3X2)                          0.26       4.25 r
+  U481/Y (XNOR2X1)                         0.29       4.54 r
+  U507/Y (XOR3X1)                          0.37       4.92 r
+  U1234/Y (XOR3X2)                         0.28       5.19 f
+  U441/Y (XOR2X4)                          0.10       5.29 r
+  U624/Y (CLKINVX1)                        0.20       5.48 f
+  U1235/Y (XOR3X2)                         0.23       5.71 r
+  U1236/Y (XOR3X2)                         0.25       5.96 f
+  U443/Y (XOR2X4)                          0.10       6.06 r
+  U626/Y (CLKINVX1)                        0.20       6.26 f
+  U1237/Y (XOR3X2)                         0.23       6.49 r
+  U1238/Y (XOR3X2)                         0.24       6.73 f
+  U440/Y (XOR2X2)                          0.14       6.87 r
+  U625/Y (CLKINVX1)                        0.21       7.08 f
+  U1239/Y (XOR3X2)                         0.23       7.31 r
+  U1240/Y (XOR3X2)                         0.25       7.56 f
+  U442/Y (XOR2X4)                          0.10       7.66 r
+  U623/Y (CLKINVX1)                        0.25       7.91 f
+  U452/Y (XOR3X4)                          0.22       8.13 r
+  U451/Y (XOR2X4)                          0.10       8.23 f
+  U459/Y (CLKINVX1)                        0.13       8.36 r
+  U469/Y (NAND2X1)                         0.09       8.45 f
+  U470/Y (NAND2X1)                         0.24       8.69 r
+  U466/Y (XNOR3X1)                         0.33       9.02 r
+  U1241/Y (XOR3X2)                         0.27       9.30 f
+  U478/Y (XOR2X4)                          0.10       9.39 r
+  U479/Y (CLKINVX1)                        0.19       9.58 f
+  U464/Y (XOR2X1)                          0.26       9.84 r
+  U467/Y (CLKINVX1)                        0.23      10.07 f
+  U476/Y (NAND2X1)                         0.16      10.23 r
+  U477/Y (NAND2X1)                         0.12      10.35 f
+  U474/Y (XOR2X1)                          0.15      10.50 f
+  U779/Y (AO22X1)                          0.28      10.78 f
+  o_data_reg[2]/D (DFFQXL)                 0.00      10.78 f
+  data arrival time                                  10.78
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              1.00      11.00
+  clock uncertainty                       -0.10      10.90
+  o_data_reg[2]/CK (DFFQXL)                0.00      10.90 r
+  library setup time                      -0.09      10.81
+  data required time                                 10.81
+  -----------------------------------------------------------
+  data required time                                 10.81
+  data arrival time                                 -10.78
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+1
